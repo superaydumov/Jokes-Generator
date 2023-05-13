@@ -16,6 +16,9 @@
 		C97D50252A0D83DF00BC5542 /* Jokes_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D50242A0D83DF00BC5542 /* Jokes_GeneratorTests.swift */; };
 		C97D502F2A0D83DF00BC5542 /* Jokes_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D502E2A0D83DF00BC5542 /* Jokes_GeneratorUITests.swift */; };
 		C97D50312A0D83DF00BC5542 /* Jokes_GeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D50302A0D83DF00BC5542 /* Jokes_GeneratorUITestsLaunchTests.swift */; };
+		C97D50402A0D941000BC5542 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C97D503F2A0D941000BC5542 /* Roboto-Regular.ttf */; };
+		C97D50422A0D975700BC5542 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D50412A0D975700BC5542 /* Colors.swift */; };
+		C97D50452A0F874300BC5542 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D50442A0F874200BC5542 /* UIView+Borders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C97D502A2A0D83DF00BC5542 /* Jokes GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jokes GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97D502E2A0D83DF00BC5542 /* Jokes_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes_GeneratorUITests.swift; sourceTree = "<group>"; };
 		C97D50302A0D83DF00BC5542 /* Jokes_GeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes_GeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C97D503F2A0D941000BC5542 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C97D50412A0D975700BC5542 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C97D50442A0F874200BC5542 /* UIView+Borders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 				C97D500C2A0D83D900BC5542 /* Jokes Generator */,
 				C97D50232A0D83DF00BC5542 /* Jokes GeneratorTests */,
 				C97D502D2A0D83DF00BC5542 /* Jokes GeneratorUITests */,
+				C97D503D2A0D939B00BC5542 /* Resources */,
+				C97D50432A0D993900BC5542 /* Helpers */,
 				C97D500B2A0D83D900BC5542 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,8 +111,8 @@
 				C97D500F2A0D83D900BC5542 /* SceneDelegate.swift */,
 				C97D50112A0D83D900BC5542 /* ViewController.swift */,
 				C97D50132A0D83D900BC5542 /* Main.storyboard */,
-				C97D50162A0D83DE00BC5542 /* Assets.xcassets */,
 				C97D50182A0D83DE00BC5542 /* LaunchScreen.storyboard */,
+				C97D50162A0D83DE00BC5542 /* Assets.xcassets */,
 				C97D501B2A0D83DE00BC5542 /* Info.plist */,
 			);
 			path = "Jokes Generator";
@@ -125,6 +133,31 @@
 				C97D50302A0D83DF00BC5542 /* Jokes_GeneratorUITestsLaunchTests.swift */,
 			);
 			path = "Jokes GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		C97D503D2A0D939B00BC5542 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C97D503E2A0D93F400BC5542 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C97D503E2A0D93F400BC5542 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C97D503F2A0D941000BC5542 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C97D50432A0D993900BC5542 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C97D50412A0D975700BC5542 /* Colors.swift */,
+				C97D50442A0F874200BC5542 /* UIView+Borders.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +266,7 @@
 			files = (
 				C97D501A2A0D83DE00BC5542 /* LaunchScreen.storyboard in Resources */,
 				C97D50172A0D83DE00BC5542 /* Assets.xcassets in Resources */,
+				C97D50402A0D941000BC5542 /* Roboto-Regular.ttf in Resources */,
 				C97D50152A0D83D900BC5542 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97D50122A0D83D900BC5542 /* ViewController.swift in Sources */,
+				C97D50422A0D975700BC5542 /* Colors.swift in Sources */,
 				C97D500E2A0D83D900BC5542 /* AppDelegate.swift in Sources */,
 				C97D50102A0D83D900BC5542 /* SceneDelegate.swift in Sources */,
+				C97D50452A0F874300BC5542 /* UIView+Borders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,10 +477,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jokes Generator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,10 +506,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jokes Generator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
