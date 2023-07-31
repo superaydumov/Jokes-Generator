@@ -140,6 +140,7 @@ class JokeGeneratorViewController: UIViewController, JokesFactoryDelegate {
         guard let currentJoke = currentJoke else { return }
         let alert = AlertModel(title: "Punchline", text: currentJoke.punchline, buttonText: "Ok", completion: { [weak self] in
             guard self != nil else { return }
+            self?.jokesFactory?.requestNextJoke()
         })
         alertPresenter?.show(with: alert)
     }
